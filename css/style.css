@@ -49,7 +49,7 @@ nav .nav-container {
     justify-content: space-between;
     flex-direction: row;
 
-    width: 960px;
+    min-width: 960px;
 }
 
 nav .nav-container #logo {
@@ -96,14 +96,15 @@ nav .nav-container #menu ul li a {
 }
 
 nav .nav-container #menu ul li a .icon {
-  height: 18px;
-  width: 18px;
+  height: auto;
+  width: 16px;
   filter: invert(56%) sepia(79%) saturate(3%) hue-rotate(22deg) brightness(94%)
     contrast(86%);
 }
 
 .title-container {
   background: var(--color-green-2);
+  min-height: 100px; 
   color: var(--color-gray-light-1);
 
   display: flex;
@@ -116,7 +117,7 @@ nav .nav-container #menu ul li a .icon {
   align-items: center;
   justify-content: space-between;
 
-  width: 960px;
+  min-width: 960px;
 }
 
 .title-container .title h2 {
