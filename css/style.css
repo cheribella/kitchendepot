@@ -4,14 +4,14 @@
     box-sizing: border-box;
 }
 
-:root {
-    /*TYPEFACES*/
+ :root {
+    /***Typeface***/
     --font-open-sans: "Open Sans", sans-serif;
     --fw-light-300: 300;
     --fw-regular-400: 400;
     --fw-medium-500: 500;
     --fw-semi-bold-600: 600;
-    /*COLOR SWATCH*/
+    /***Color Swatches***/
     --color-gray-light-1: #f5f5f5;
     /* whitesmoke */
     --color-gray-dark-1: #ddd;
@@ -29,9 +29,22 @@
     /* orangered */
     --color-red-2: #b22222;
     /* firebrick */
+    /**Filter Color**/
+    --filter-color-gray-light-1: invert(100%) sepia(5%) saturate(174%) hue-rotate(238deg) brightness(116%) contrast(92%);
+    --filter-color-gray-dark-1: invert(97%) sepia(1%) saturate(36%) hue-rotate(345deg) brightness(94%) contrast(89%);
+    --filter-color-gray-dark-2: invert(72%) sepia(0%) saturate(2974%) hue-rotate(98deg) brightness(95%) contrast(81%);
+    --filter-color-gray-dark-3: invert(73%) sepia(0%) saturate(118%) hue-rotate(131deg) brightness(92%) contrast(81%);
+    --filter-color-gray-dark-4: invert(34%) sepia(8%) saturate(14%) hue-rotate(329deg) brightness(90%) contrast(88%);
+    --filter-color-gray-dark-5: invert(15%) sepia(0%) saturate(0%) hue-rotate(336deg) brightness(100%) contrast(87%);
+    --filter-color-green-1: invert(20%) sepia(79%) saturate(6467%) hue-rotate(113deg) brightness(99%) contrast(104%);
+    --filter-color-green-2: invert(45%) sepia(76%) saturate(423%) hue-rotate(38deg) brightness(94%) contrast(86%);
+    --filter-color-yellow: invert(77%) sepia(92%) saturate(3415%) hue-rotate(355deg) brightness(107%) contrast(102%);
+    --filter-color-red-1: invert(32%) sepia(33%) saturate(5491%) hue-rotate(1deg) brightness(102%) contrast(105%);
+    --filter-color-red-2: invert(21%) sepia(29%) saturate(5642%) hue-rotate(344deg) brightness(94%) contrast(111%);
 }
 
 body {
+    height: 100vh;
     font-family: var(--font-open-sans);
     font-size: 14px;
     font-weight: var(--fw-light-300);
@@ -52,6 +65,9 @@ body {
 .uppercase {
     text-transform: uppercase;
 }
+
+
+/*Navigation Bar*/
 
 nav {
     display: flex;
@@ -88,6 +104,10 @@ nav .nav-container #logo a {
     gap: 10px;
 }
 
+nav #menu a .icon {
+    filter: var(--filter-color-gray-dark-3);
+}
+
 nav .nav-container #menu ul {
     display: flex;
     align-items: center;
@@ -111,8 +131,10 @@ nav .nav-container #menu ul li a {
 nav .nav-container #menu ul li a .icon {
     height: auto;
     width: 16px;
-    filter: invert(56%) sepia(79%) saturate(3%) hue-rotate(22deg) brightness(94%) contrast(86%);
 }
+
+
+/* Title Bar */
 
 .title-container {
     background: var(--color-green-2);
@@ -146,21 +168,167 @@ nav .nav-container #menu ul li a .icon {
 }
 
 .title-container .chevron-right {
-    filter: invert(100%) sepia(0%) saturate(5820%) hue-rotate(340deg) brightness(114%) contrast(86%);
+    filter: var(--filter-color-gray-light-1);
 }
 
 
 /* MAIN */
 
+img.recipe-img,
+img.author-img {
+    height: auto;
+    width: 50px;
+}
+
+img.author-img {
+    border-radius: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* I. Recipe Quick Info */
+
+main .quick-info-container {}
+
+
+/* II. Ingredients and Instructions */
+
+
+/* IV. Ratings */
+
+
+/* V. Recommendations */
+
 
 /* FOOTER */
 
 footer {
-    background: var(--color-gray-dark-4)
+    background-color: var(--color-gray-dark-4);
+    color: var(--color-gray-light-1);
 }
 
-footer .top-footer {}
+footer .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
-footer .subfooter {}
+footer a {
+    text-decoration: none;
+    color: inherit;
+}
 
-footer .subfooter .subfooter-container {}
+footer .footer .footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 960px;
+    max-width: 100%;
+}
+
+footer .footer .footer-container .icon {
+    filter: var(--filter-color-gray-light-1);
+}
+
+footer .footer .footer-container .left {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 40px;
+}
+
+footer .footer .footer-container .left .footer-logo {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+}
+
+footer .footer .footer-container .left .footer-logo .logo-text {
+    font-weight: var(--fw-medium-500);
+    font-size: 18px;
+    width: inherit;
+}
+
+footer .footer .footer-container .left .footer-logo .logo {
+    height: auto;
+    width: 124px;
+}
+
+footer .footer .footer-container .left .deets {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+footer .footer .footer-container .left .deets .deets-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+footer .footer .footer-container .left .deets .deets-info:first-of-type .span {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0;
+}
+
+footer .right {
+    height: 100%;
+}
+
+footer .footer .footer-container .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer .footer .footer-container .right .whitespace {
+    border: 1px solid red;
+}
+
+footer .footer .footer-container .right .social-media {
+    border: 1px solid red;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    align-content: end;
+}
+
+
+/* Subfooter */
+
+footer .subfooter {
+    background-color: var(--color-gray-dark-5);
+    color: var(--color-gray-dark-2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .subfooter .subfooter-container {
+    padding: 10px 0;
+    min-width: 960px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .subfooter .subfooter-container .developer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+footer .subfooter .subfooter-container .developer .icon {
+    filter: var(--filter-color-gray-dark-3);
+}
