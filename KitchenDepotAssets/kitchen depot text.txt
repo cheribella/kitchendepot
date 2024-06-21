@@ -95,4 +95,4 @@ www.kitchendepot.org
 ### SUBFOOTER
 © Copyright 2020, Kitchen Depot
 
-Web Development by [Your Name Goes Here]
+Web Development by Ethan Vaughn Cueto
