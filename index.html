@@ -6,33 +6,90 @@
     <title>Kitchen Depot</title>
     <link rel="icon" href="images/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <!--NAVIGATION-->
 
       <nav>
-        <div id="logo">
-          <!--LOGO, lowercase-->
-          <img src="svg/logo.svg" alt="Kitchen Depot Logo" class="logo" />
-          <h1><a href="#">Kitchen Depot</a></h1>
-        </div>
-        <div id="menu">
-          <ul>
-            <!--NAV LIST-->
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Recipes</a></li>
-            <li><a href="#">Kitchen</a></li>
-            <li><a href="#">Community</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+        <div class="nav-container">
+          <div id="logo">
+            <!--LOGO, lowercase-->
+            <img src="svg/logo.svg" alt="Kitchen Depot Logo" class="logo" />
+            <h1><a href="#">Kitchen Depot</a></h1>
+          </div>
+          <div id="menu">
+            <ul>
+              <!--NAV UNORDERED LIST-->
+              <li>
+                <a href="#"
+                  ><img
+                    src="svg/home.svg"
+                    alt="Home Icon"
+                    class="icon"
+                  />Home</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="svg/book.svg"
+                    alt="Recipes Icon"
+                    class="icon"
+                  />Recipes</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="svg/bowl.svg"
+                    alt="Kitchen Icon"
+                    class="icon"
+                  />Kitchen</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="svg/users.svg"
+                    alt="Community Icon"
+                    class="icon"
+                  />Community</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="svg/chat.svg"
+                    alt="Contact Icon"
+                    class="icon"
+                  />Contact</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
 
       <!--PAGE TITLE-->
-      <div>
-        <div class="title">recipes</div>
-        <div class="subtitle">> tomato basil buratta pasta</div>
+      <div class="title-container">
+        <div class="container">
+          <div class="title"><h2>recipes</h2></div>
+          <div class="subtitle">
+            <img
+              src="svg/chevron-thin-right.svg"
+              alt="Chevron Right"
+              class="chevron-right"
+            />
+            <h3>tomato basil buratta pasta</h3>
+          </div>
+        </div>
       </div>
     </header>
   </body>

@@ -5,6 +5,14 @@
 }
 
 :root {
+  /*TYPEFACES*/
+  --font-open-sans: "Open Sans", sans-serif;
+  --fw-light-300: 300;
+  --fw-regular-400: 400;
+  --fw-medium-500: 500;
+  --fw-semi-bold-600: 600;
+
+  /*COLOR SWATCH*/
   --color-gray-light-1: #f5f5f5; /* whitesmoke */
   --color-gray-dark-1: #ddd;
   --color-gray-dark-2: #aaa;
@@ -22,17 +30,109 @@
 }
 
 body {
+  font-family: var(--font-open-sans);
+  font-size: 14px;
+  font-weight: var(--fw-light-300);
+  color: var(--color-gray-dark-5);
 }
 
-#logo .logo {
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 0;
+}
+
+nav .nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+
+    width: 960px;
+}
+
+nav .nav-container #logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+nav .nav-container #logo .logo {
   height: auto;
   width: 50px;
 }
 
-#logo h1 {
+nav .nav-container #logo h1 {
   text-transform: lowercase;
+  font-weight: var(--fw-light-300);
 }
 
-#logo h1 a {
+nav .nav-container #logo h1 a {
   text-decoration: none;
+  color: var(--color-green-1);
+}
+
+nav .nav-container #menu ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  list-style-type: none;
+}
+
+nav .nav-container #menu ul li {
+  height: 100%;
+}
+
+nav .nav-container #menu ul li a {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
+  text-transform: lowercase;
+  color: var(--color-green-1);
+}
+
+nav .nav-container #menu ul li a .icon {
+  height: 18px;
+  width: 18px;
+  filter: invert(56%) sepia(79%) saturate(3%) hue-rotate(22deg) brightness(94%)
+    contrast(86%);
+}
+
+.title-container {
+  background: var(--color-green-2);
+  color: var(--color-gray-light-1);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-container .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 960px;
+}
+
+.title-container .title h2 {
+  font-weight: var(--fw-medium-500);
+  letter-spacing: 2px;
+}
+
+.title-container .subtitle h3 {
+  font-weight: var(--fw-regular-400); 
+}
+
+.title-container .subtitle {
+    display: flex;
+}
+
+.title-container .chevron-right {
+  filter: invert(100%) sepia(0%) saturate(5820%) hue-rotate(340deg)
+    brightness(114%) contrast(86%);
 }
