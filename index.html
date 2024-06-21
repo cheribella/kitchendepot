@@ -21,26 +21,26 @@
                 <div id="logo">
                     <!--LOGO, lowercase-->
                     <a href="#">
-                        <img src="svg/logo.svg" alt="Kitchen Depot Logo" class="logo" /><span>Kitchen Depot</span>
+                        <img src="svg/logo.svg" alt="Kitchen Depot Logo" class="logo" /><span class="lowercase">Kitchen Depot</span>
                     </a>
                 </div>
                 <div id="menu">
                     <ul>
                         <!--NAV UNORDERED LIST-->
                         <li>
-                            <a href="#"><img src="svg/home.svg" alt="Home Icon" class="icon" />Home</a>
+                            <a href="#" class="lowercase"><img src="svg/home.svg" alt="Home Icon" class="icon" />Home</a>
                         </li>
                         <li>
-                            <a href="#"><img src="svg/book.svg" alt="Recipes Icon" class="icon" />Recipes</a>
+                            <a href="#" class="lowercase"><img src="svg/book.svg" alt="Recipes Icon" class="icon" />Recipes</a>
                         </li>
                         <li>
-                            <a href="#"><img src="svg/bowl.svg" alt="Kitchen Icon" class="icon" />Kitchen</a>
+                            <a href="#" class="lowercase"><img src="svg/bowl.svg" alt="Kitchen Icon" class="icon" />Kitchen</a>
                         </li>
                         <li>
-                            <a href="#"><img src="svg/users.svg" alt="Community Icon" class="icon" />Community</a>
+                            <a href="#" class="lowercase"><img src="svg/users.svg" alt="Community Icon" class="icon" />Community</a>
                         </li>
                         <li>
-                            <a href="#"><img src="svg/chat.svg" alt="Contact Icon" class="icon" />Contact</a>
+                            <a href="#" class="lowercase"><img src="svg/chat.svg" alt="Contact Icon" class="icon" />Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -51,29 +51,244 @@
         <div class="title-container">
             <div class="container">
                 <div class="title">
-                    <h1>recipes</h1>
+                    <h1 class="lowercase">Recipes</h1>
                 </div>
-                <div class="subtitle">
+                <div class="recipe-title">
                     <img src="svg/chevron-thin-right.svg" alt="Chevron Right" class="chevron-right" />
-                    <h2>tomato basil buratta pasta</h2>
+                    <h2 class="lowercase">Tomato Basil Buratta Pasta</h2>
                 </div>
             </div>
         </div>
     </header>
     <main>
-        <!--RECIPE INFO-->
+        <!--RECIPE QUICK INFO-->
+        <section id="recipe-quick-info">
+            <div class="container">
+                <!--RECIPE TITLE-->
+                <h3>Tomato Basil Buratta Pasta</h3>
+                <!--RECIPE AUTHOR-->
+                <div class="recipe-author">
+                    <img src="images/author.jpg" alt="Linda Haas" class="author-img">
+                    <p class="author-name">Linda Haas</p>
+                </div>
+                <!--RECIPE DURATION-->
+                <div class="recipe-quick-info">
+                    <div class="duration">
+                        <!--UNORDERED LIST-->
+                        <ul>
+                            <li>Preparation Time: <span>10</span> min. </li>
+                            <li>Cooking Time: <span>15</span> min. </li>
+                            <li>Serves: <span>4</span</li>
+                        </ul>
+                    </div>
+                    <div class="description">
+                        <p>
+                            A succulent but healthy meal that brings on Mexican heat with the lightness of a flour tortilla. Easy to prepare for quick meals or mass produce it when company knocks at your door.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--RECIPE IMAGE-->
+            <div class="recipe-img-container">
+                <picture class="recipe-img">
+                  <img src="" alt="Tomato Basil Buratta Pasta" srcset="">
+                </picture>
+            </div>
+        </section>
 
         <!--INGREDIENTS AND INSTRUCTIONS-->
+        <section id="recipe">
+          <div class="recipe-container">
+            <div class="ingredients-container">
+              <h3 class="capitalize">Ingredients</h3>
+              <ul>
+                <!--UNORDERED LIST--> 
+                            <li><span>680 g. </span>plum tomatoes, quartered</li>
+                            <li><span>3 cloves </span>garlic, chopped</li>
+                            <li><span>125 ml. </span>olive oil</li>
+                            <li><span>2 Tbsp. </span>red wine vinegar</li>
+                            <li><span>2 tsp. </span>olive oil</li>
+                            <li><span>340 g </span>spaghetti</li>
+                            <li><span>10 g. </span>chopped basil</li>
+                            <li><span>30 g. </span>grated parmesan cheese</li>
+                            <li><span>375 g. </span>burrata cheese</li>
+                        </ul>
+                    </div>
+                    <div class="instructions-container">
+                        <h3 class="capitalize">Instructions</h3>
+                        <ol>
+                            <!--ORDERED LIST-->
+                            <li>In a large, nonreactive bowl, combine the tomatoes, garlic, olive oil, vinegar, ½ tsp. salt, and ¼ tsp. pepper. Let stand at room temperature, stirring occasionally, for 1 hour.</li>
+                            <li>Bring a large pot of generously salted water to a boil over high heat. Add the spaghetti and cook according to the package directions until al dente. Drain the pasta well and add, while still piping hot, to the bowl with the
+                                tomatoes.
+                            </li>
+                            <li>Stir in the basil and Parmesan. Taste and adjust the seasoning.</li>
+                            <li>Divide the pasta among bowls and top each serving with 60 to 90 g of the burrata.</li>
+                            <li>Drizzle the bowls with olive oil and serve immediately. Serves 4 to 6.</li>
+                        </ol>
+                    </div>
+                    <div class="rating-container">
+                        <div class="location">
+                            <div class="location-pin-icon">
+                                <img src="svg/location-pin.svg" alt="Location Pin" srcset="">
+                            </div>
+                            <div class="location-info capitalize">
+                                Altopiano delle Murge, Italy
+                            </div>
+                        </div>
+                        <div class="tag">
+                            <div class="tag-icon">
+                                <img src="svg/price-tag.svg" alt="Tag" srcset="">
+                            </div>
+                            <div class="tag-list">
+                                <ul>
+                                    <li class="lowercase">
+                                        Pasta
+                                    </li>
+                                    <li class="lowercase">
+                                        Italian
+                                    </li>
+                                    <li class="lowercase">
+                                        Cheese
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="star-rating">
+                            <div class="star-icon"><img src="svg/star.svg" alt="Star"></div>
+                            <div class="star-icon"><img src="svg/star.svg" alt="Star"></div>
+                            <div class="star-icon"><img src="svg/star.svg" alt="Star"></div>
+                            <div class="star-icon"><img src="svg/star.svg" alt="Star"></div>
+                            <div class="star-outlined-icon"><img src="svg/star-outlined.svg" alt="Star Outlined"></div>
+                        </div>
+                        <div class="rating-values">
+                            <div class="vote-rating">4.17</div>
+                            <div class="vote-counts">529<span> votes</span></div>
+                        </div>
+                    </div>
+                </div>
+        </section>
 
         <!--REVIEWS & RECOMMENDATIONS-->
+        <section id="recommendations">
+            <div class="title">
+                <h2 class="uppercase">Recommendations</h2>
+                <p class="subtitle lowercase">based on your browsing activity</p>
+            </div>
+            <div class="recommendations-container">
+
+                <!-- Josh Mendiola Chipotle Beef Wrap -->
+
+                <div class="card">
+                    <div class="recipe-img">
+                        <img src="images/chipotle beef wrap.jpg" alt="Chipotle Beef Wrap" srcset="">
+                    </div>
+                    <div class="recipe-info">
+                        <h3 class="capitalize">Chipotle Beef Wrap</h3>
+                        <div class="star-rating">
+                            <div class="star-icon"><img src="svg/star.svg" alt="Star"></div>
+                            <div class="star-icon"><img src="svg/star.svg" alt="Star"></div>
+                            <div class="star-icon"><img src="svg/star.svg" alt="Star"></div>
+                            <div class="star-icon"><img src="svg/star.svg" alt="Star"></div>
+                            <div class="star-outlined-icon"><img src="svg/star-outlined.svg" alt="Star Outlined"></div>
+                        </div>
+                        <div class="description">
+                            <p>
+                                There's Mexican heat in every bite of this healthy festive staple that will satisfy your spicy cravings.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="rec-author">
+                        <div class="left">
+                            <img src="images/user02.jpg" alt="Josh Mendiola" srcset=""> Josh Mendiola
+                        </div>
+                        <div class="right">
+                            <button type="submit">
+                              <span class="rating-number">92.5</span>
+                              <span class="user-rating">User Rating</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Dru Wang Filet Mignon-->
+
+                <div class="card">
+                    <div class="recipe-img">
+                        <img src="images/filet  mignon.jpg" alt="Filet Mignon" srcset="">
+                    </div>
+                    <div class="recipe-info">
+                        <h3 class="capitalize">Filet Mignon</h3>
+                        <div class="star-rating">
+                            <div class="star-icon"><img src="svg/star.svg" alt="Star"></div>
+                            <div class="star-icon"><img src="svg/star.svg" alt="Star"></div>
+                            <div class="star-icon"><img src="svg/star.svg" alt="Star"></div>
+                            <div class="star-icon"><img src="svg/star.svg" alt="Star"></div>
+                            <div class="star-outlined-icon"><img src="svg/star-outlined.svg" alt="Star Outlined"></div>
+                        </div>
+                        <div class="description">
+                            <p>
+                                Beef tenderloin seared to perfection so that its juices are released with every effortless slice.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="rec-author">
+                        <div class="left">
+                            <img src="images/user03.jpg" alt="Dru Wang" srcset=""> Dru Wang
+                        </div>
+                        <div class="right">
+                            <button type="submit">
+                            <span class="rating-number">94.7</span>
+                            <span class="user-rating">User Rating</span>
+                          </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Alexander Walsh Chicken Tandoori -->
+
+                <div class="card">
+                    <div class="recipe-img">
+                        <img src="images/chicken tandoori.jpg" alt="Chicken Tandoori" srcset="">
+                    </div>
+                    <div class="recipe-info">
+                        <h3 class="capitalize">Chicken Tandoori</h3>
+                        <div class="star-rating">
+                            <div class="star-icon"><img src="svg/star.svg" alt="Star"></div>
+                            <div class="star-icon"><img src="svg/star.svg" alt="Star"></div>
+                            <div class="star-icon"><img src="svg/star.svg" alt="Star"></div>
+                            <div class="star-icon"><img src="svg/star.svg" alt="Star"></div>
+                            <div class="star-outlined-icon"><img src="svg/star-outlined.svg" alt="Star Outlined"></div>
+                        </div>
+                        <div class="description">
+                            <p>
+                                Chicken marinated in Indian spices will surely make you crave for Basmati or our delicions naan.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="rec-author">
+                        <div class="left">
+                            <img src="images/user04.jpg" alt="Alexander Walsh" srcset=""> Alexander Walsh
+                        </div>
+                        <div class="right">
+                            <button type="submit">
+                            <span class="rating-number">96.5</span>
+                            <span class="user-rating">User Rating</span>
+                          </button>
+                        </div>
+                    </div>
+                </div>
+        </section>
     </main>
-    <footer>
+
+    <!--FOOTER-->
+    <footer id="footer">
         <section class="top-footer">
             <div class="left">
                 <div class="footer-logo">
                     <a href="#">
                         <img src="svg/logo.svg" alt="Kitchen Depot Logo" class="logo" />
-                        <span>Kitchen Depot</span>
+                        <span class="lowercase">Kitchen Depot</span>
                     </a>
                 </div>
                 <div class="deets"></div>

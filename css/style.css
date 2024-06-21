@@ -41,6 +41,18 @@ body {
 
 /* HEADER & NAVIGATION */
 
+.capitalize {
+    text-transform: capitalize;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
 nav {
     display: flex;
     align-items: center;
@@ -62,7 +74,6 @@ nav .nav-container #logo .logo {
 }
 
 nav .nav-container #logo a span {
-    text-transform: lowercase;
     font-weight: var(--fw-light-300);
     font-size: 24px;
     min-width: 100px;
@@ -94,7 +105,6 @@ nav .nav-container #menu ul li a {
     align-items: center;
     flex-direction: column;
     text-decoration: none;
-    text-transform: lowercase;
     color: var(--color-green-1);
 }
 
@@ -125,12 +135,14 @@ nav .nav-container #menu ul li a .icon {
     letter-spacing: 2px;
 }
 
-.title-container .subtitle h2 {
+.title-container .recipe-title h2 {
     font-weight: var(--fw-regular-400);
 }
 
-.title-container .subtitle {
+.title-container .recipe-title {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .title-container .chevron-right {
