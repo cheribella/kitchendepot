@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-gray-light-1: #f5f5f5; /* whitesmoke */
+  --color-gray-dark-1: #ddd;
+  --color-gray-dark-2: #aaa;
+  --color-gray-dark-3: #999;
+  --color-gray-dark-4: #555;
+  --color-gray-dark-5: #333;
+
+  --color-green-1: #008000; /* green */
+  --color-green-2: #6b8e23; /* olivedrab */
+
+  --color-yellow: #ffd700; /* gold */
+
+  --color-red-1: #ff4500; /* orangered */
+  --color-red-2: #b22222; /* firebrick */
+}
+
+body {
+}
+
+#logo .logo {
+  height: auto;
+  width: 50px;
+}
+
+#logo h1 {
+  text-transform: lowercase;
+}
+
+#logo h1 a {
+  text-decoration: none;
+}
