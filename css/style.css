@@ -186,12 +186,6 @@ nav .nav-container #menu ul li a .icon {
 }
 
 .recipe .recipe-quick-info {
-  /* background-image: url("../images/tomato\ basil\ buratta\ pasta.jpg");
-  background-size: 960px;
-  background-repeat: no-repeat;
-  background-position: cover;
-  object-fit: cover;
-  object-position: center; */
   display: flex;
   align-items: flex-start;
   flex-flow: row nowrap;
