@@ -86,7 +86,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5px 0;
+  height: 50px;
 }
 
 nav .nav-container {
@@ -95,6 +95,7 @@ nav .nav-container {
   justify-content: space-between;
   flex-direction: row;
   min-width: 960px;
+  height: 100%;
 }
 
 nav .nav-container #logo .logo {
@@ -117,8 +118,12 @@ nav .nav-container #logo a {
   gap: 10px;
 }
 
-nav #menu a .icon {
+nav .nav-container #menu a .icon {
   filter: var(--filter-color-gray-dark-3);
+}
+
+nav .nav-container #menu {
+  height: 100%;
 }
 
 nav .nav-container #menu ul {
@@ -127,9 +132,18 @@ nav .nav-container #menu ul {
   justify-content: center;
   gap: 20px;
   list-style-type: none;
+  height: 100%;
 }
 
 nav .nav-container #menu ul li {
+  height: 100%;
+  padding: 10px;
+  color: var(--color-gray-dark-4);
+  transition: all 0.3s ease;
+}
+
+nav .nav-container #menu ul li:hover {
+  background-color: var(--color-yellow);
   height: 100%;
 }
 
@@ -141,9 +155,18 @@ nav .nav-container #menu ul li a {
   color: var(--color-green-1);
 }
 
+nav .nav-container #menu ul li a:hover {
+  color: var(--color-green-2);
+}
+
+nav .nav-container #menu ul li:hover .icon {
+  transform: scale(1.2);
+}
+
 nav .nav-container #menu ul li a .icon {
   height: auto;
   width: 16px;
+  transition: transform 0.3s ease;
 }
 
 /* Title Bar */
@@ -528,23 +551,24 @@ nav .nav-container #menu ul li a .icon {
   .card-contents
   .bottom
   .user-rating {
-    border-radius: 5px;
-    background-color: var(--color-green-2);
-    color: var(--color-gray-light-1);
-    text-align: center;
-    padding: 10px;
-  }
+  border-radius: 5px;
+  background-color: var(--color-green-2);
+  color: var(--color-gray-light-1);
+  text-align: center;
+  padding: 10px;
+}
 
-  .recommendations
+.recommendations
   .reco-container
   .cards-container
   .card
   .card-contents
   .bottom
-  .user-rating p:first-of-type {
-    font-weight: var(--fw-semi-bold-600);
-    font-size: 18px;
-  }
+  .user-rating
+  p:first-of-type {
+  font-weight: var(--fw-semi-bold-600);
+  font-size: 18px;
+}
 /* Footer */
 
 footer {
