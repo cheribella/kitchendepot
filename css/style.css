@@ -201,7 +201,7 @@ nav .nav-container #menu ul li a .icon {
   background-color: var(--color-gray-light-1);
   min-height: 100%;
   width: 100%;
-  padding: 32px 20px 56px 20px;
+  padding: 32px 20px 60px 20px;
 
   display: flex;
   flex-direction: column;
@@ -210,7 +210,6 @@ nav .nav-container #menu ul li a .icon {
   text-align: left;
   gap: 25px;
   flex: 1 0 30%;
-  order: -1;
 }
 
 .recipe .recipe-quick-info .recipe-content .recipe-title {
@@ -244,6 +243,7 @@ nav .nav-container #menu ul li a .icon {
   justify-content: space-between;
   gap: 20px;
   font-weight: var(--fw-regular-400);
+  cursor: text;
 }
 
 .recipe .recipe-quick-info .recipe-content .recipe-duration ul li:before {
@@ -270,7 +270,7 @@ nav .nav-container #menu ul li a .icon {
   object-fit: cover;
   background-position: center;
   min-height: 100%;
-  width: 100%;
+  max-width: 100%;
   flex: 1;
 }
 
@@ -354,13 +354,13 @@ nav .nav-container #menu ul li a .icon {
 .recipe-rating .rating-container .tag,
 .recipe-rating .rating-container .star-rating {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row;
+  align-self: center;
 }
 
 .recipe-rating .rating-container .tag .tag-list ul {
   display: flex;
-  flex-flow: row;
+  flex-direction: row;
 }
 
 .recipe-rating
@@ -385,6 +385,166 @@ nav .nav-container #menu ul li a .icon {
   font-weight: var(--fw-semi-bold-600);
 }
 
+/* Recommendations */
+.recommendations {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.recommendations .reco-container {
+  background-color: var(--color-gray-light-1);
+  width: 960px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5px 60px 5px;
+}
+
+.recommendations .reco-container .reco-title {
+  padding: 60px 15px 40px 15px;
+  text-align: center;
+  width: 100%;
+}
+
+.recommendations .reco-container .reco-title .title {
+  font-weight: var(--fw-light-300);
+  font-size: 24px;
+  letter-spacing: 10px;
+}
+
+.recommendations .reco-container .cards-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: 100%;
+  width: 960px;
+  flex-flow: row wrap;
+}
+
+.recommendations .reco-container .cards-container .card {
+  background-color: #fff;
+  min-height: 100%;
+  width: 300px;
+  cursor: pointer;
+}
+
+.recommendations .reco-container .cards-container .card .reco-img-wrapper {
+  height: 180px;
+  width: 100%;
+}
+
+.recommendations .reco-container .cards-container .card .reco-img-wrapper img {
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  object-fit: cover;
+}
+
+.recommendations .reco-container .cards-container .card .card-contents {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 20px 0 20px;
+}
+
+.recommendations .reco-container .cards-container .card .card-contents .top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.recommendations
+  .reco-container
+  .cards-container
+  .card
+  .card-contents
+  .top
+  .star-rating {
+  display: flex;
+  gap: 5px;
+  margin-top: 2px;
+}
+
+.recommendations
+  .reco-container
+  .cards-container
+  .card
+  .card-contents
+  .top
+  .star-rating
+  .icon {
+  height: auto;
+  width: 0.85rem;
+}
+
+.recommendations .reco-container .cards-container .card .card-contents .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.recommendations
+  .reco-container
+  .cards-container
+  .card
+  .card-contents
+  .bottom
+  .user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.recommendations
+  .reco-container
+  .cards-container
+  .card
+  .card-contents
+  .bottom
+  .user
+  .user-img {
+  height: auto;
+  width: 60px;
+  border-radius: 100%;
+  margin-right: 2.5px;
+}
+
+.recommendations
+  .reco-container
+  .cards-container
+  .card
+  .card-contents
+  .bottom
+  .user-rating {
+    border-radius: 5px;
+    background-color: var(--color-green-2);
+    color: var(--color-gray-light-1);
+    text-align: center;
+    padding: 10px;
+  }
+
+  .recommendations
+  .reco-container
+  .cards-container
+  .card
+  .card-contents
+  .bottom
+  .user-rating p:first-of-type {
+    font-weight: var(--fw-semi-bold-600);
+    font-size: 18px;
+  }
 /* Footer */
 
 footer {
