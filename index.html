@@ -145,9 +145,9 @@
       </section>
 
       <!--INGREDIENTS AND INSTRUCTIONS-->
-      <section id="recipe">
+      <section class="recipe-guide">
         <div class="recipe-container">
-          <div class="ingredients-container">
+          <div class="ingredients">
             <h3 class="capitalize">Ingredients</h3>
             <ul>
               <!--UNORDERED LIST-->
@@ -162,7 +162,7 @@
               <li><span>375 g. </span>burrata cheese</li>
             </ul>
           </div>
-          <div class="instructions-container">
+          <div class="instructions">
             <h3 class="capitalize">Instructions</h3>
             <ol>
               <!--ORDERED LIST-->
@@ -190,10 +190,17 @@
               </li>
             </ol>
           </div>
+        </div>
+        <div class="recipe-rating">
           <div class="rating-container">
             <div class="location">
               <div class="location-pin-icon">
-                <img src="svg/location-pin.svg" alt="Location Pin" srcset="" />
+                <img
+                  src="svg/location-pin.svg"
+                  alt="Location Pin"
+                  srcset=""
+                  class="icon"
+                />
               </div>
               <div class="location-info capitalize">
                 Altopiano delle Murge, Italy
@@ -201,23 +208,35 @@
             </div>
             <div class="tag">
               <div class="tag-icon">
-                <img src="svg/price-tag.svg" alt="Tag" srcset="" />
+                <img src="svg/price-tag.svg" alt="Tag" srcset="" class="icon" />
               </div>
               <div class="tag-list">
                 <ul>
-                  <li class="lowercase">Pasta</li>
-                  <li class="lowercase">Italian</li>
-                  <li class="lowercase">Cheese</li>
+                  <li class="lowercase recipe-tag">Pasta</li>
+                  <li class="lowercase recipe-tag">Italian</li>
+                  <li class="lowercase recipe-tag">Cheese</li>
                 </ul>
               </div>
             </div>
             <div class="star-rating">
-              <div class="star-icon"><img src="svg/star.svg" alt="Star" /></div>
-              <div class="star-icon"><img src="svg/star.svg" alt="Star" /></div>
-              <div class="star-icon"><img src="svg/star.svg" alt="Star" /></div>
-              <div class="star-icon"><img src="svg/star.svg" alt="Star" /></div>
+              <div class="star-icon">
+                <img src="svg/star.svg" alt="Star" class="icon" />
+              </div>
+              <div class="star-icon">
+                <img src="svg/star.svg" alt="Star" class="icon" />
+              </div>
+              <div class="star-icon">
+                <img src="svg/star.svg" alt="Star" class="icon" />
+              </div>
+              <div class="star-icon">
+                <img src="svg/star.svg" alt="Star" class="icon" />
+              </div>
               <div class="star-outlined-icon">
-                <img src="svg/star-outlined.svg" alt="Star Outlined" />
+                <img
+                  src="svg/star-outlined.svg"
+                  alt="Star Outlined"
+                  class="icon"
+                />
               </div>
             </div>
             <div class="rating-values">
@@ -227,6 +246,8 @@
           </div>
         </div>
       </section>
+
+      <!--RECIPE RECOMMENDATIONS-->
     </main>
 
     <!--FOOTER-->
